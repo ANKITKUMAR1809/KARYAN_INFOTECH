@@ -6,7 +6,7 @@ import Roadmap from "../components/Roadmap";
 const AboutUs = () => {
   return (
     <div>
-      <section className="w-full bg-white dark:bg-black flex flex-col items-center relative">
+      <section className="w-full bg-white  flex flex-col items-center relative">
         {/* Top Banner Image */}
         <img
           src="https://zinmatt.com/wp-content/uploads/2025/05/Indias-No-1-Digital-Marketing-Institute-1-1.png"
@@ -15,27 +15,27 @@ const AboutUs = () => {
         />
 
         {/* About Us Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white dark:text-white absolute top-1/2 transform -translate-y-1/2">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white absolute top-1/2 transform -translate-y-1/2">
           About Us
         </h2>
       </section>
 
-      <section className="w-full bg-white dark:bg-black py-12 px-4 md:px-8">
+      <section className="w-full bg-white  py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800  mb-4">
             Who we are?
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-lg">
+          <p className="text-gray-600 -300 text-lg">
             Shaping Careers Through Real-World Training, One Learner at a Time.
           </p>
         </div>
       </section>
 
-      <section className="w-full bg-white dark:bg-black py-12 px-4 md:px-8">
+      <section className="w-full bg-white  py-12 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Left Content */}
           <div className="flex-1 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 ">
               We are{" "}
               <span className="text-orange-600">
                 India’s Fastest-Growing Practical EdTech
@@ -50,7 +50,7 @@ const AboutUs = () => {
               className="block lg:hidden w-full h-auto"
             />
 
-            <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+            <p className="text-gray-700  text-base leading-relaxed">
               Empowering thousands of learners with{" "}
               <strong>100% free live training</strong>, Karyan Infotech blends
               expert-led guidance with real-world tools to deliver{" "}

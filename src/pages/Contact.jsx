@@ -90,7 +90,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="w-full bg-zinc-200 dark:bg-gray-900 px-4 py-12">
+      <section className="w-full bg-zinc-200  px-4 py-12">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between">
           {/* Left Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
@@ -108,7 +108,7 @@ const Contact = () => {
               <span className="text-lg">🟠</span> Contact Info{" "}
               <span className="text-lg">🟠</span>
             </h2>
-            <h3 className="text-3xl font-bold text-gray-800 dark:text-white">
+            <h3 className="text-3xl font-bold text-gray-800 ">
               <span className="text-orange-600">Reach</span> & Get in Touch With
               Us!
             </h3>
@@ -118,28 +118,28 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-gray-800 dark:text-white"
+                className="w-full px-4 py-2 rounded-md border border-gray-300   text-gray-800 "
               />
               <input
                 type="email"
                 placeholder="Email"
                 required
-                className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-gray-800 dark:text-white"
+                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
               />
               <input
                 type="number"
                 placeholder="Mobile Number"
-                className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-gray-800 dark:text-white"
+                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
               />
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-gray-800 dark:text-white"
+                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
               />
               <textarea
                 placeholder="Message"
                 rows="4"
-                className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 text-gray-800 dark:text-white"
+                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
               ></textarea>
               <button
                 type="submit"
