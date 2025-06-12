@@ -22,15 +22,17 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full top-0 bg-white shadow z-50">
+    <header className="w-full top-0 bg-white shadow z-50 md:py-4">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
-        <NavLink to="/" className="flex-shrink-0">
+
+        <NavLink to="/" className="flex-shrink-0 flex items-center space-x-2">
           <img
             src="https://www.3karyaninfotech.in/assets/img/nlogo.png"
             alt="KARYAN Infotech Logo"
             className="h-10 w-auto"
           />
+          <h1 className="text-2xl font-bold">KARYAN INFOTECH</h1>
         </NavLink>
 
         {/* Desktop Menu */}

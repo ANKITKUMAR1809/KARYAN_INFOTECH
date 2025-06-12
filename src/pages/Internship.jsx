@@ -1,5 +1,5 @@
 import React from "react";
-
+import internshipBanner from '../assets/internship.png';
 const Internship = () => {
   const internshipData = [
     {
@@ -62,6 +62,13 @@ const Internship = () => {
 
   return (
     <>
+      <div className="mb-8">
+        <img
+          src={internshipBanner}
+          alt="Internship Banner"
+          className="w-full h-auto object-cover "
+        />
+      </div>
       <section className="bg-white py-16 px-6 md:px-16  mb-12">
         <div className="max-w-5xl mx-auto">
           <div className="text-center md:text-left mb-10">
@@ -162,7 +169,7 @@ const Internship = () => {
                 </ul>
                 <div className="mt-6 text-center">
                   <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md">
-                    VIEW ALL
+                    Apply Now
                   </button>
                 </div>
               </div>
