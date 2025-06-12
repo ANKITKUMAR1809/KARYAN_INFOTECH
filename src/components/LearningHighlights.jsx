@@ -30,12 +30,12 @@ const features = [
 
 const LearningHighlights = () => {
   return (
-    <section className="w-full bg-white dark:bg-black py-12 px-4 md:px-8">
+    <section className="w-full bg-white  py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-900 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-4 flex flex-col items-center text-center"
+            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-4 flex flex-col items-center text-center"
           >
             <img
               src={feature.image}
@@ -45,10 +45,10 @@ const LearningHighlights = () => {
             {/* Optional: show icon above image if needed */}
             {/* <div className="mb-3">{feature.icon}</div> */}
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+            <h3 className="text-lg font-semibold text-gray-800  mb-2">
               {feature.title}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
+            <p className="text-gray-600  text-sm">
               {feature.description}
             </p>
           </div>
