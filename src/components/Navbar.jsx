@@ -32,7 +32,7 @@ const Navbar = () => {
             alt="KARYAN Infotech Logo"
             className="h-10 w-auto"
           />
-          <h1 className="text-2xl font-bold">KARYAN INFOTECH</h1>
+          <h1 className="md:text-2xl font-bold">KARYAN INFOTECH</h1>
         </NavLink>
 
         {/* Desktop Menu */}

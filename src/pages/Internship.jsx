@@ -1,5 +1,6 @@
 import React from "react";
 import internshipBanner from '../assets/internship.png';
+
 const Internship = () => {
   const internshipData = [
     {
@@ -62,14 +63,17 @@ const Internship = () => {
 
   return (
     <>
-      <div className="mb-8">
+      {/* Top Banner Image */}
+      <div className="w-full">
         <img
           src={internshipBanner}
           alt="Internship Banner"
-          className="w-full h-auto object-cover "
+          className="w-full h-auto object-cover rounded-b-xl shadow-lg"
         />
       </div>
-      <section className="bg-white py-16 px-6 md:px-16  mb-12">
+
+      {/* Internship Info Section */}
+      <section className="bg-white py-16 px-6 md:px-16 mb-12">
         <div className="max-w-5xl mx-auto">
           <div className="text-center md:text-left mb-10">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight tracking-tight">
@@ -139,18 +143,17 @@ const Internship = () => {
         </div>
       </section>
 
-      <div className="w-full bg-zinc-100 mx-auto  p-6 md:p-10 lg:p-14 mb-8">
-        {/* Main Heading */}
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center text-orange-400 mb-8 md:mb-12 leading-tight">
+      {/* Internship Categories Grid Section */}
+      <div className="w-full bg-zinc-100 px-6 md:px-10 lg:px-14 py-12">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center text-orange-500 mb-12 leading-tight">
           JOIN THE BEST INTERNSHIP COMPANY IN PATNA BIHAR !!
         </h1>
 
-        {/* Internship Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {internshipData.map((section, index) => (
             <div
               key={index}
-              className=" rounded-xl shadow-md overflow-hidden border border-orange-500"
+              className="bg-white rounded-xl shadow-md overflow-hidden border border-orange-500 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="bg-orange-500 text-white p-6 text-center rounded-t-xl">
                 <h2 className="text-2xl font-bold mb-1">{section.title}</h2>
@@ -161,14 +164,14 @@ const Internship = () => {
                   {section.items.map((item, idx) => (
                     <li
                       key={idx}
-                      className="py-2 px-4 rounded-md  hover:bg-orange-600 transition-colors duration-200 cursor-pointer"
+                      className="py-2 px-4 rounded-md hover:bg-orange-100 transition-colors duration-200 cursor-pointer text-gray-800"
                     >
                       {item}
                     </li>
                   ))}
                 </ul>
                 <div className="mt-6 text-center">
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md">
+                  <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md">
                     Apply Now
                   </button>
                 </div>
