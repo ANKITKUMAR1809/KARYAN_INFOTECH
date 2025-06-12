@@ -24,33 +24,32 @@ const Home = () => {
     },
   ];
   const audienceItems = [
-  {
-    title: "Career Shifters",
-    description: "Focused training designed to deliver measurable success.",
-    image: "https://zinmatt.com/wp-content/uploads/2025/05/12-1.png",
-  },
-  {
-    title: "Parents",
-    description: "Focused training designed to deliver measurable success.",
-    image: "https://zinmatt.com/wp-content/uploads/2025/05/13-1.png",
-  },
-  {
-    title: "Dreamers",
-    description: "Focused training designed to deliver measurable success.",
-    image: "https://zinmatt.com/wp-content/uploads/2025/05/14-1.png",
-  },
-];
-
+    {
+      title: "Career Shifters",
+      description: "Focused training designed to deliver measurable success.",
+      image: "https://zinmatt.com/wp-content/uploads/2025/05/12-1.png",
+    },
+    {
+      title: "Parents",
+      description: "Focused training designed to deliver measurable success.",
+      image: "https://zinmatt.com/wp-content/uploads/2025/05/13-1.png",
+    },
+    {
+      title: "Dreamers",
+      description: "Focused training designed to deliver measurable success.",
+      image: "https://zinmatt.com/wp-content/uploads/2025/05/14-1.png",
+    },
+  ];
 
   return (
     <div>
       <section className="w-full flex justify-center items-center bg-white py-10 px-4">
         <div className="max-w-4xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold leading-snug">
-            India’s <span className="text-orange-600">No.1</span> Live &amp;
-            Practical
+            India’s <span className="text-orange-600">No.1 Platform for</span>{" "}
+            Digital Services &amp; 
             <br />
-            Educational Platform
+            Practical Education
           </h2>
         </div>
       </section>
@@ -102,7 +101,6 @@ const Home = () => {
       </div>
       <div>
         <HighlightsGrid items={audienceItems} bg="white" />
-
       </div>
     </div>
   );

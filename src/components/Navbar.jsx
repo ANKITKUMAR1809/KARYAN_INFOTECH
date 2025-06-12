@@ -1,25 +1,24 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'About Us', href: '/about-us' },
-    { label: 'Course', href: '/course' },
-    { label: 'Masterclass', href: '/masterclass' },
-    { label: 'Contact Us', href: '/contact-us' },
-    { label: 'Freebies', href: '/freebies' },
-    { label: 'Internship', href: '/internship' },
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/about-us" },
+    { label: "Services", href: "/services" },
+    { label: "Contact Us", href: "/contact-us" },
+
+    { label: "Internship", href: "/internship" },
   ];
 
   const otherLinks = [
-    { label: 'Blog', href: '/blog' },
-    { label: 'Review', href: '/review' },
-    { label: 'Certificate', href: '/certificate' },
-    { label: 'Event', href: '/event' },
+    { label: "Blog", href: "/blog" },
+    { label: "Review", href: "/review" },
+    { label: "Certificate", href: "/certificate" },
+    { label: "Event", href: "/event" },
   ];
 
   return (
@@ -27,7 +26,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <NavLink to="/" className="flex-shrink-0">
-          <h1 className='text-2xl font-semibold'>KARYAN INFOTECH</h1>
+          <img
+            src="https://www.3karyaninfotech.in/assets/img/nlogo.png"
+            alt="KARYAN Infotech Logo"
+            className="h-10 w-auto"
+          />
         </NavLink>
 
         {/* Desktop Menu */}

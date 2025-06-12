@@ -1,6 +1,12 @@
-import { NavLink } from 'react-router-dom';
-import { FaFacebook, FaYoutube, FaPinterest, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import { NavLink } from "react-router-dom";
+import {
+  FaFacebook,
+  FaYoutube,
+  FaPinterest,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -20,10 +26,11 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start">
             <NavLink to="/" className="mb-4">
-              <h1 className='text-2xl font-semibold'>KARYAN INFOTECH</h1>
+              <h1 className="text-2xl font-semibold">KARYAN INFOTECH</h1>
             </NavLink>
             <h2 className="text-lg font-semibold text-center md:text-left">
-              Elevate Your Learning Journey with Cutting-Edge Education Technology.
+              Elevate Your Learning Journey with Cutting-Edge Education
+              Technology.
             </h2>
             <div className="flex space-x-4 mt-4 justify-center md:justify-start">
               <a
@@ -150,17 +157,19 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin size={20} className="text-gray-600" />
                 <span className="text-gray-600">
-                  Address: The Hub 3rd Floor, Gandhi Maidan Gate No 7, Patna,
-                  Bihar 800001
+                  Address: Ashok Nagar road no.5, Kankarbagh,Patna 20
+                  Bihar,India
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={20} className="text-gray-600" />
-                <span className="text-gray-600">Mail: Support@karyaninfotech.com</span>
+                <span className="text-gray-600">
+                  Mail: infoaman@3karyaninfotech.in
+                </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={20} className="text-gray-600" />
-                <span className="text-gray-600">Phone: +91 8969353544</span>
+                <span className="text-gray-600">Phone: +91 7091060239</span>
               </li>
             </ul>
           </div>
