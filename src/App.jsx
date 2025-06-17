@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { Home, AboutUs, Contact, Services,Blog, Disclaimer, FAQ,Login,PrivacyPolicy ,Products, Register , Support,TermsConditions } from "./pages";
+import { Home, AboutUs, Contact, Services,Blog, Disclaimer, FAQ,Login,PrivacyPolicy ,Products, Apply , Support,TermsConditions } from "./pages";
 import Footer from "./components/Footer";
 import Internship from "./pages/Internship";
 
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/privacy" element={<PrivacyPolicy/>} />
         <Route path="/support" element={<Support/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
+        <Route path="/apply" element={<Apply/>} />
         <Route path="/disclaimer" element={<Disclaimer/>} />
       </Routes>
       <Footer />

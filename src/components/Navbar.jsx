@@ -7,9 +7,9 @@ const Navbar = () => {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "/about-us" },
+    { label: "About", href: "/about-us" },
     { label: "Services", href: "/services" },
-    { label: "Contact Us", href: "/contact-us" },
+    { label: "Contact", href: "/contact-us" },
 
     { label: "Internship", href: "/internship" },
   ];
@@ -64,13 +64,6 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-
-          <a
-            href="#"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-          >
-            Download Brochure
-          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -95,12 +88,7 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <a
-              href="#"
-              className="bg-blue-600 text-white px-4 py-2 text-center rounded hover:bg-blue-700"
-            >
-              Download Brochure
-            </a>
+          
           </div>
         </div>
       )}

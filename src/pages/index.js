@@ -4,7 +4,7 @@ import Contact from './Contact';
 import Blog from "./Blog";
 import Services from "./Services";
 import Login from "./Login";
-import Register from "./Register";
+import Apply from "./Apply";
 import Disclaimer from "./Disclaimer";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsConditions from "./TermsConditions";
@@ -13,4 +13,4 @@ import Products from './Products';
 import FAQ from './FAQ';
 
 
-export {  Home, AboutUs, Contact, Blog, Services, Login, Register, Disclaimer, PrivacyPolicy, TermsConditions, Support, Products, FAQ };
+export {  Home, AboutUs, Contact, Blog, Services, Login, Apply, Disclaimer, PrivacyPolicy, TermsConditions, Support, Products, FAQ };
