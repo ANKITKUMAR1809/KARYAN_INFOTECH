@@ -78,7 +78,7 @@ const Home = () => {
         </div>
       </section>
       <section className="flex justify-center align-center">
-        <h1 className="text-4xl font-bold">KARYAN's INTERNSHIP PROGRAM</h1>
+        <h1 className="md:text-4xl text-xl text-center font-bold">KARYAN's INTERNSHIP PROGRAM</h1>
       </section>
       <div>
         <TabbedPrograms />
@@ -91,7 +91,7 @@ const Home = () => {
         <HighlightsSection />
       </div>
       <div className="flex flex-col justify-center items-center py-10 px-4">
-        <h3 className="text-4xl font-bold">
+        <h3 className="text-4xl font-bold text-center">
           Who is <span className="text-orange-500">KARYAN</span> For?
         </h3>
         <div className="w-2/12 h-0.5 bg-black mt-4"></div>
