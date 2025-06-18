@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import contactImg from "../assets/KARYAN_CONTACT.png"
+import contactImg from "../assets/KARYAN_CONTACT.png";
 const Contact = () => {
   return (
     <>
@@ -42,7 +42,7 @@ const Contact = () => {
               </div>
             </div>
             <p className="text-sm text-gray-600">
-              The Hub 3rd Floor, Gandhi Maidan Gate No 7, Patna, Bihar
+              Address: Ashok Nagar road no.5, Kankarbagh,Patna 20 Bihar,India
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const Contact = () => {
                 <p className="font-semibold">Make A Call</p>
               </div>
             </div>
-            <p className="text-sm text-gray-600">+91 8969353544</p>
+            <p className="text-sm text-gray-600">+91 7091060239</p>
           </div>
 
           {/* Email */}
@@ -67,9 +67,8 @@ const Contact = () => {
                 <p className="font-semibold">Mail Address</p>
               </div>
             </div>
-            <p className="text-sm text-gray-600">
-              Support@Karyan Infotech.com <br />
-              Help@Karyan Infotech.com
+            <p className="text-sm text-gray-600 ">
+              infoaman@3karyaninfotech.com <br />
             </p>
           </div>
 
