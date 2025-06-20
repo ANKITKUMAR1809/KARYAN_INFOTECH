@@ -1,8 +1,13 @@
 import React from "react";
 import { Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import TimelineSection from "../components/TimelineSection";
 import Roadmap from "../components/Roadmap";
+import view1 from '../assets/internship/view1.jpg'
+import view2 from '../assets/internship/view2.jpg'
+import view6 from '../assets/internship/view6.jpg'
+import view4 from '../assets/internship/view4.jpg'
+import view5 from '../assets/internship/view5.jpg'
+import view7 from '../assets/internship/view7.jpg'
 const AboutUs = () => {
   return (
     <div>
@@ -211,10 +216,62 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {/* image gallery */}
+      <section className=" px-6 py-12">
+        <h2 className="text-3xl md:text- font-bold text-center mb-8">
+          Moments from Our Journey ✨
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={view1}
+              alt="Internship Workshop"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={view2}
+              alt="Project Collaboration"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={view6}
+              alt="Tech Talk Session"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={view4}
+              alt="Team Brainstorming"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={view5}
+              alt="Interns at Work"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={view7}
+              alt="Certificate Distribution"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </section>
 
       <div>
         <h3 className="text-6xl font-semibold text-center">Our Journey</h3>
       </div>
+
       <div>
         <Roadmap />
       </div>
