@@ -1,7 +1,56 @@
 import React from "react";
+import { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import contactImg from "../assets/KARYAN_CONTACT.png";
+import axios from "axios";
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const response = await axios.post(
+        "https://kiec.3karyaninfotech.in//api/contact",
+        formData
+      );
+
+      if (response.status === 200) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      alert("Submission failed. Please check your internet connection.");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <>
       <section
@@ -113,39 +162,68 @@ const Contact = () => {
             </h3>
 
             {/* Form */}
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full px-4 py-2 rounded-md border border-gray-300   text-gray-800 "
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                required
-                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
-              />
-              <input
-                type="number"
-                placeholder="Mobile Number"
-                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
-              />
-              <textarea
-                placeholder="Message"
-                rows="4"
-                className="w-full px-4 py-2 rounded-md border border-gray-300  text-gray-800 "
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 rounded-md transition"
-              >
-                Send
-              </button>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              {submitted ? (
+                <p className="text-green-600 font-semibold text-center">
+                  ✅ Your message has been sent!
+                </p>
+              ) : (
+                <>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Name"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 text-gray-800"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Email"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 text-gray-800"
+                    required
+                  />
+                  <input
+                    type="number"
+                    name="mobile"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    placeholder="Mobile Number"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 text-gray-800"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    placeholder="Subject"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 text-gray-800"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Message"
+                    rows="4"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 text-gray-800"
+                    required
+                  ></textarea>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 rounded-md transition"
+                    disabled={loading}
+                  >
+                    {loading ? "Sending..." : "Send"}
+                  </button>
+                </>
+              )}
             </form>
           </div>
         </div>
