@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start">
-            <NavLink to="/" className="mb-4">
+            <NavLink to="/kiec/" className="mb-4">
               <h1 className="text-2xl font-semibold">KARYAN INFOTECH</h1>
             </NavLink>
             <h2 className="text-lg font-semibold text-center md:text-left">
@@ -87,7 +87,7 @@ const Footer = () => {
             <ul className="space-y-2 text-center md:text-left">
               <li>
                 <NavLink
-                  to="/about-us"
+                  to="/kiec/about-us"
                   className="text-gray-600 hover:text-blue-600"
                 >
                   About Us
@@ -95,7 +95,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/kiec/contact"
                   className="text-gray-600 hover:text-blue-600"
                 >
                   Contact
@@ -103,7 +103,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/blog"
+                  to="/kiec/blog"
                   className="text-gray-600 hover:text-blue-600"
                 >
                   Blog
@@ -111,7 +111,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/privacy-policy"
+                  to="/kiec/privacy-policy"
                   className="text-gray-600 hover:text-blue-600"
                 >
                   Privacy Policy
@@ -119,7 +119,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/terms-condition"
+                  to="/kiec/terms-condition"
                   className="text-gray-600 hover:text-blue-600"
                 >
                   Terms & Conditions
@@ -127,7 +127,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/disclaimer"
+                  to="/kiec/disclaimer"
                   className="text-gray-600 hover:text-blue-600"
                 >
                   Disclaimer

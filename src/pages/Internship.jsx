@@ -204,7 +204,7 @@ const Internship = () => {
                 <div className="mt-6 text-center">
                   <button
                     className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md"
-                    onClick={() => navigate("/apply")}
+                    onClick={() => navigate("/kiec/apply")}
                   >
                     Apply Now
                   </button>

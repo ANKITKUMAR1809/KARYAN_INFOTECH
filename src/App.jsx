@@ -21,15 +21,15 @@ const App = () => {
       <Navbar />
       <Popup />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/internship" element={<Internship />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/apply" element={<Apply />} />
-        <Route path="/certificate" element={<Certificate/>} />
+        <Route path="/kiec/" element={<Home />} />
+        <Route path="/kiec/about-us" element={<AboutUs />} />
+        <Route path="/kiec/contact-us" element={<Contact />} />
+        <Route path="/kiec/services" element={<Services />} />
+        <Route path="/kiec/blog" element={<Blog />} />
+        <Route path="/kiec/internship" element={<Internship />} />
+        <Route path="/kiec/login" element={<Login />} />
+        <Route path="/kiec/apply" element={<Apply />} />
+        <Route path="/kiec/certificate" element={<Certificate/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

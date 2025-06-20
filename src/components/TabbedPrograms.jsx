@@ -65,7 +65,7 @@ const TabbedPrograms = () => {
                 {/* Apply Now Button */}
                 <div className="md:absolute md:bottom-6 md:left-1/2 md:-translate-x-1/2 flex justify-center mt-4 md:mt-0">
                   <Link
-                    to="/apply"
+                    to="/kiec/apply"
                     className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm md:text-base border shadow hover:bg-gray-100 transition"
                   >
                     Apply Now

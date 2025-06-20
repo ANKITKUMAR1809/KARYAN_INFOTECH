@@ -7,25 +7,25 @@ const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about-us" },
-    { label: "Services", href: "/services" },
-    { label: "Contact", href: "/contact-us" },
-    { label: "Internship", href: "/internship" },
+    { label: "Home", href: "/kiec/" },
+    { label: "About", href: "/kiec/about-us" },
+    { label: "Services", href: "/kiec/services" },
+    { label: "Contact", href: "/kiec/contact-us" },
+    { label: "Internship", href: "/kiec/internship" },
   ];
 
   const otherLinks = [
-    { label: "Blog", href: "/blog" },
-    { label: "Review", href: "/review" },
-    { label: "Certificate", href: "/certificate" },
-    { label: "Event", href: "/event" },
+    { label: "Blog", href: "/kiec/blog" },
+    { label: "Review", href: "/kiec/review" },
+    { label: "Certificate", href: "/kiec/certificate" },
+    { label: "Event", href: "/kiec/event" },
   ];
 
   return (
     <header className="w-full top-0 bg-white shadow z-50 md:py-4">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
-        <NavLink to="/" className="flex-shrink-0 flex items-center space-x-2">
+        <NavLink to="/kiec/" className="flex-shrink-0 flex items-center space-x-2">
           <img
             src="https://www.3karyaninfotech.in/assets/img/nlogo.png"
             alt="KARYAN Infotech Logo"
