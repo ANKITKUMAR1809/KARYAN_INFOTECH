@@ -4,6 +4,7 @@ import TabbedPrograms from "../components/TabbedPrograms";
 import LearningHighlights from "../components/LearningHighlights";
 import HighlightsSection from "../components/HighlightsSection";
 import HighlightsGrid from "../components/HighlightsGrid";
+import HomeImg from '../assets/internship.png'
 
 const Home = () => {
   const audienceHighlights = [
@@ -43,8 +44,9 @@ const Home = () => {
 
   return (
     <div>
-      <section className="w-full flex justify-center items-center bg-white py-10 px-4">
-        <div className="max-w-4xl text-center">
+      <section className="w-full flex justify-center items-center bg-white">
+        <img src={HomeImg} alt="" />
+        <div className="max-w-4xl text-center absolute text-white">
           <h2 className="text-3xl md:text-5xl font-bold leading-snug">
             India’s <span className="text-orange-600">No.1 Platform for</span>{" "}
             Digital Services &amp; 

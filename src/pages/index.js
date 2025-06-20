@@ -1,16 +1,10 @@
 import Home from "./Home";
 import AboutUs from "./AboutUs";
-import Contact from './Contact';
+import Contact from "./Contact";
 import Blog from "./Blog";
 import Services from "./Services";
 import Login from "./Login";
 import Apply from "./Apply";
-import Disclaimer from "./Disclaimer";
-import PrivacyPolicy from "./PrivacyPolicy";
-import TermsConditions from "./TermsConditions";
-import Support from './Support';
-import Products from './Products';
-import FAQ from './FAQ';
+import Certificate from "./Certificate";
 
-
-export {  Home, AboutUs, Contact, Blog, Services, Login, Apply, Disclaimer, PrivacyPolicy, TermsConditions, Support, Products, FAQ };
+export { Home, AboutUs, Contact, Blog, Services, Login, Apply, Certificate };

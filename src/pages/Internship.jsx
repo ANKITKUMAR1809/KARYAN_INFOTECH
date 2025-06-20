@@ -1,7 +1,8 @@
 import React from "react";
-import internshipBanner from '../assets/internship.png';
-
+import Certificate from "../assets/internship/Certificate.jpg";
+import { useNavigate } from "react-router-dom";
 const Internship = () => {
+  const navigate = useNavigate();
   const internshipData = [
     {
       title: "Technology",
@@ -64,15 +65,45 @@ const Internship = () => {
   return (
     <>
       {/* Top Banner Image */}
-      <div className="w-full">
-        <img
-          src={internshipBanner}
-          alt="Internship Banner"
-          className="w-full h-auto object-cover rounded-b-xl shadow-lg"
-        />
+      <div className="bg-gradient-to-l from-black to-orange-500 flex flex-col md:flex-row justify-around items-center px-6 py-12 gap-8 md:gap-0">
+        <div className="relative w-full md:w-auto h-60 md:h-80">
+          <img
+            src={Certificate}
+            alt="Certificate"
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        <div className="w-full md:w-1/2 text-white text-center md:text-left">
+          <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+            💡{" "}
+            <span className="text-orange-300 font-bold">
+              Ready to shine in the tech world?
+            </span>
+            <br />
+            Join our{" "}
+            <span className="text-orange-300 font-bold">
+              exclusive internship program
+            </span>{" "}
+            and gain hands-on experience with real-world projects.
+          </p>
+          <p className="mt-4 text-base md:text-lg">
+            Learn directly from industry experts, build a powerful portfolio,
+            and earn a
+            <span className="text-orange-200 font-semibold">
+              {" "}
+              certificate that sets you apart.
+            </span>
+            <br />
+            No matter your skill level, we’ll help you grow into a confident
+            developer!
+          </p>
+          <p className="mt-4 text-lg md:text-xl font-bold text-orange-100">
+            🌟 Start your journey with us — learn, build, and get certified!
+          </p>
+        </div>
       </div>
 
-      {/* Internship Info Section */}
       <section className="bg-white py-16 px-6 md:px-16 mb-12">
         <div className="max-w-5xl mx-auto">
           <div className="text-center md:text-left mb-10">
@@ -171,7 +202,10 @@ const Internship = () => {
                   ))}
                 </ul>
                 <div className="mt-6 text-center">
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md">
+                  <button
+                    className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md"
+                    onClick={() => navigate("/apply")}
+                  >
                     Apply Now
                   </button>
                 </div>
