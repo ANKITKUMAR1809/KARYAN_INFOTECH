@@ -1,13 +1,7 @@
 import { NavLink } from "react-router-dom";
-import {
-  FaFacebook,
-  FaYoutube,
-  FaPinterest,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MapPin, Mail, Phone } from "lucide-react";
-
+import kiLogo from "../assets/logoKiec.png"; // Adjust the path as necessary
 const Footer = () => {
   return (
     <footer
@@ -18,168 +12,138 @@ const Footer = () => {
       className="bg-gray-100 text-gray-800"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Divider */}
         <div className="border-t border-gray-300 mb-8"></div>
 
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Logo and Description */}
-          <div className="flex flex-col items-center md:items-start">
-            <NavLink to="/kiec/" className="mb-4">
-              <h1 className="text-2xl font-semibold">KARYAN INFOTECH</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Logo & Description */}
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <NavLink to="/" className="mb-4 text-center">
+              <img src={kiLogo} alt="" className="w-20 h-auto" />
+              {/* <h1 className="text-2xl font-bold flex justify-center items-center">
+                3K ARYAN INFOTECH
+              </h1> */}
             </NavLink>
-            <h2 className="text-lg font-semibold text-center md:text-left">
-              Elevate Your Learning Journey with Cutting-Edge Education
-              Technology.
-            </h2>
-            <div className="flex space-x-4 mt-4 justify-center md:justify-start">
+            <p className="text-base">
+              MAKE CAREER IN IT INDUSTRY WITH 3K ARYAN INFOTECH. We provide
+              comprehensive training and services in web development, graphics
+              designing, SEO, and digital marketing. Join us to enhance your
+              skills and build a successful career in the IT industry.
+              <br />
+              <br />
+              <strong>
+                Follow us on social media for updates and insights!
+              </strong>
+            </p>
+            <div className="flex space-x-4 mt-4">
               <a
-                href="http://facebook.com/KARYAN INFOTECHofficial"
+                href="https://www.facebook.com/share/155X8TzEyb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600"
-                aria-label="Facebook"
               >
-                <FaFacebook size={24} />
+                <FaFacebook size={20} />
               </a>
               <a
-                href="https://youtube.com/@KARYANINFOTECHofficial"
+                href="https://www.youtube.com/@KiEC2020"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-red-600"
-                aria-label="YouTube"
               >
-                <FaYoutube size={24} />
+                <FaYoutube size={20} />
               </a>
               <a
-                href="http://in.pinterest.com/KARYANINFOTECH_official"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-red-400"
-                aria-label="Pinterest"
-              >
-                <FaPinterest size={24} />
-              </a>
-              <a
-                href="http://instagram.com/KARYANINFOTECH_official"
+                href="https://www.instagram.com/karyaninfotech?igsh=NHZ6OWhrZHB0aWI2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-pink-500"
-                aria-label="Instagram"
               >
-                <FaInstagram size={24} />
+                <FaInstagram size={20} />
               </a>
               <a
-                href="http://linkedin.com/company/KARYANINFOTECHofficial/"
+                href="https://www.linkedin.com/company/karyan-infotech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-700"
-                aria-label="LinkedIn"
               >
-                <FaLinkedin size={24} />
+                <FaLinkedin size={20} />
               </a>
             </div>
           </div>
 
           {/* Company Links */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h2 className="text-lg font-semibold mb-4">Company</h2>
-            <ul className="space-y-2 text-center md:text-left">
-              <li>
-                <NavLink
-                  to="/kiec/about-us"
-                  className="text-gray-600 hover:text-blue-600"
-                >
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/kiec/contact"
-                  className="text-gray-600 hover:text-blue-600"
-                >
-                  Contact
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/kiec/blog"
-                  className="text-gray-600 hover:text-blue-600"
-                >
-                  Blog
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/kiec/privacy-policy"
-                  className="text-gray-600 hover:text-blue-600"
-                >
-                  Privacy Policy
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/kiec/terms-condition"
-                  className="text-gray-600 hover:text-blue-600"
-                >
-                  Terms & Conditions
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/kiec/disclaimer"
-                  className="text-gray-600 hover:text-blue-600"
-                >
-                  Disclaimer
-                </NavLink>
-              </li>
+            <ul className="space-y-2 text-sm">
+              {[
+                ["About Us", "/about-us"],
+                ["Contact", "/contact"],
+                ["Blog", "https://3karyaninfotech.in/institute/blog.php"],
+                ["Services", "/services"],
+                ["Freebies", "https://3karyaninfotech.in/institute/freebies.php"],
+                ["Services", ""],
+                ["Privacy Policy", "/privacy-policy"],
+                ["Terms & Conditions", "/terms-condition"],
+                ["Disclaimer", "/disclaimer"],
+              ].map(([text, link]) => (
+                <li key={link}>
+                  <NavLink
+                    to={link}
+                    className="text-gray-600 hover:text-blue-600"
+                  >
+                    {text}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Our Programs */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h2 className="text-lg font-semibold mb-4">Our Programs</h2>
-            <ul className="space-y-2 text-center md:text-left">
-              <li className="text-gray-600">Website Development</li>
-              <li className="text-gray-600">Graphics Designing</li>
-              <li className="text-gray-600">Search Engine Optimization</li>
-              <li className="text-gray-600">Meta Ads</li>
-              <li className="text-gray-600">Google Ads</li>
-              <li className="text-gray-600">Artificial Intelligence</li>
-              <li className="text-gray-600">Social Media Optimization</li>
+            <ul className="space-y-2 text-sm">
+              {[
+                "Website Development",
+                "Graphics Designing",
+                "Search Engine Optimization",
+                "Meta Ads",
+                "Google Ads",
+                "Artificial Intelligence",
+                "Social Media Optimization",
+              ].map((program) => (
+                <li key={program} className="text-gray-600">
+                  {program}
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h2 className="text-lg font-semibold mb-4">Contact Info</h2>
-            <ul className="space-y-4 text-center md:text-left">
-              <li className="flex items-start space-x-2">
-                <MapPin size={20} className="text-gray-600" />
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-start gap-2">
+                <MapPin className="text-gray-600 mt-1" size={20} />
                 <span className="text-gray-600">
-                  Address: Ashok Nagar road no.5, Kankarbagh,Patna 20
-                  Bihar,India
+                  Ashok Nagar Rd No.5, Kankarbagh, Patna 800020, Bihar, India
                 </span>
               </li>
-              <li className="flex items-center space-x-2">
-                <Mail size={20} className="text-gray-600" />
+              <li className="flex items-center gap-2">
+                <Mail className="text-gray-600" size={20} />
                 <span className="text-gray-600">
-                  Mail: infoaman@3karyaninfotech.in
+                  infoaman@3karyaninfotech.in
                 </span>
               </li>
-              <li className="flex items-center space-x-2">
-                <Phone size={20} className="text-gray-600" />
-                <span className="text-gray-600">Phone: +91 7091060239</span>
+              <li className="flex items-center gap-2">
+                <Phone className="text-gray-600" size={20} />
+                <span className="text-gray-600">+91 7091060239</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-300 mt-8 pt-4 text-center">
-          <span className="text-gray-600">
-            Copyright © 2025 KARYAN INFOTECH | Powered by KARYAN INFOTECH
-          </span>
+        <div className="border-t border-gray-300 mt-8 pt-4 text-center text-sm text-gray-600">
+          © 2025 3K ARYAN INFOTECH | Powered by 3K ARYAN INFOTECH
         </div>
       </div>
     </footer>

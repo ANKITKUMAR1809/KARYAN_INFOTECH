@@ -2,15 +2,31 @@ import React from "react";
 import { Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import Roadmap from "../components/Roadmap";
-import view1 from '../assets/internship/view1.jpg'
-import view2 from '../assets/internship/view2.jpg'
-import view6 from '../assets/internship/view6.jpg'
-import view4 from '../assets/internship/view4.jpg'
-import view5 from '../assets/internship/view5.jpg'
-import view7 from '../assets/internship/view7.jpg'
+import view1 from "../assets/internship/view1.jpg";
+import view2 from "../assets/internship/view2.jpg";
+import view6 from "../assets/internship/view6.jpg";
+import view4 from "../assets/internship/view4.jpg";
+import view5 from "../assets/internship/view5.jpg";
+import view7 from "../assets/internship/view7.jpg";
+import AboutImg from "../assets/about.jpg";
+import { Helmet } from "react-helmet-async";
 const AboutUs = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          About 3K Aryan Infotech | Your Trusted Digital Growth Partner
+        </title>
+        <meta
+          name="description"
+          content="Learn more about 3K Aryan Infotech – Bihar’s leading digital service and training provider. With 8+ years of experience, we turn visions into digital success."
+        />
+        <meta
+          name="keywords"
+          content="About IT company in Bihar, experienced digital company in Patna, top IT firm Bihar"
+        />
+      </Helmet>
+
       <section className="w-full bg-white  flex flex-col items-center relative">
         {/* Top Banner Image */}
         <img
@@ -36,7 +52,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white  py-12 px-4 md:px-8">
+      <section className="w-full   py-12 px-4 md:px-8 bg-[#DFB680]">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Left Content */}
           <div className="flex-1 space-y-6">
@@ -50,14 +66,14 @@ const AboutUs = () => {
 
             {/* Mobile Image */}
             <img
-              src="https://zinmatt.com/wp-content/uploads/2025/05/Advanced-Digital-Marketing-with-AI.png"
-              alt="Karyan Infotech"
-              className="block lg:hidden w-full h-auto"
+              src={AboutImg}
+              alt="3K ARYAN Infotech"
+              className="block lg:hidden w-full h-auto "
             />
 
             <p className="text-gray-700  text-base leading-relaxed">
               Empowering thousands of learners with{" "}
-              <strong>100% free live training</strong>, Karyan Infotech blends
+              <strong>100% free live training</strong>, 3K ARYAN Infotech blends
               expert-led guidance with real-world tools to deliver{" "}
               <strong>job-ready digital marketing skills</strong>.
               <br />
@@ -79,9 +95,9 @@ const AboutUs = () => {
           {/* Right Image (Hidden on Mobile) */}
           <div className="flex-1 hidden lg:block">
             <img
-              src="https://zinmatt.com/wp-content/uploads/2025/05/Advanced-Digital-Marketing-with-AI.png"
-              alt="Karyan Infotech"
-              className="w-full h-auto"
+              src={AboutImg}
+              alt="3K ARYAN Infotech"
+              className="w-full h-auto "
             />
           </div>
         </div>

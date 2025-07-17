@@ -111,7 +111,7 @@ const Internship = () => {
               Internship in Bihar —
               <span className="text-orange-500">
                 {" "}
-                Karyan Infotech Education Centre
+                3K ARYAN Infotech Education Centre
               </span>
             </h1>
           </div>
@@ -119,7 +119,7 @@ const Internship = () => {
           <div className="text-gray-700 text-lg md:text-xl leading-relaxed space-y-6">
             <p>
               <strong className="text-orange-500 font-semibold">
-                Karyan Infotech
+                3K ARYAN Infotech
               </strong>{" "}
               has gained a trustworthy reputation among the{" "}
               <strong className="text-orange-500 font-semibold">
@@ -158,7 +158,7 @@ const Internship = () => {
 
             <p>
               <strong className="text-orange-500 font-semibold">
-                Karyan Infotech
+                3K ARYAN Infotech
               </strong>{" "}
               is widely recognized as a leading{" "}
               <strong className="text-orange-500 font-semibold">
@@ -204,7 +204,7 @@ const Internship = () => {
                 <div className="mt-6 text-center">
                   <button
                     className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md"
-                    onClick={() => navigate("/kiec/apply")}
+                    onClick={() => navigate("/apply")}
                   >
                     Apply Now
                   </button>

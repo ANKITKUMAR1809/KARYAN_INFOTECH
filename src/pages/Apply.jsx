@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import applyPic from "../assets/apply.png"; // Assuming you have an image for the apply section
+import applyPic from "../assets/apply_kiec.png"
 import axios from "axios";
 const Apply = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ const Apply = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://kiec.3karyaninfotech.in//api/send",
+        "https://server.3karyaninfotech.in/api/send",
         formData
       );
 
@@ -53,7 +53,7 @@ const Apply = () => {
           <img
             src={applyPic}
             alt="Apply Illustration"
-            className="w-72 h-72 object-contain"
+            className="w-full h-auto object-contain"
           />
         </div>
 

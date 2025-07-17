@@ -42,7 +42,7 @@ const TabbedPrograms = () => {
             className={`px-4 py-2 border-2 rounded-lg font-medium text-xs sm:text-sm md:text-base transition-all duration-300 ${
               activeTab === tab.id
                 ? "bg-orange-600 text-white shadow-md border-orange-600"
-                : "bg-white text-black border-black hover:bg-orange-500 hover:text-white"
+                : "bg-white text-blue-950 border-black hover:bg-orange-500 hover:text-white"
             }`}
           >
             {tab.label}
@@ -65,8 +65,8 @@ const TabbedPrograms = () => {
                 {/* Apply Now Button */}
                 <div className="md:absolute md:bottom-6 md:left-1/2 md:-translate-x-1/2 flex justify-center mt-4 md:mt-0">
                   <Link
-                    to="/kiec/apply"
-                    className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm md:text-base border shadow hover:bg-gray-100 transition"
+                    to="/apply"
+                    className="bg-white text-blue-950 px-5 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm md:text-base border shadow hover:bg-gray-100 transition"
                   >
                     Apply Now
                   </Link>

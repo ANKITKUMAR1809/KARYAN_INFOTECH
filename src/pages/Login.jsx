@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
 const Login = () => {
@@ -8,7 +8,7 @@ const Login = () => {
     username: "",
     password: "",
   });
-  const { login } = useAuth();
+  const { login, isLoggedIn } = useAuth();
   const navigate = useNavigate();
   const handleChange = (e) => {
     let { name, value } = e.target;
@@ -20,20 +20,26 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // try {
-    //   const response = await axios.post(
-    //     "https://mmc.osgtaxpro.in/auth/admin-login",
-    //     formData
-    //   );
-    //   if (response.status === 200) {
-    //     login(response.data.token); // triggers re-render across app
-    //     navigate("/kiec/dashboard");
-    //   }
-    // } catch (error) {
-    //   alert("Login failed");
-    //   console.error(error);
-    // }
+    try {
+      const response = await axios.post(
+        "https://server.3karyaninfotech.in/auth/login",
+        formData
+      );
+      if (response.status === 200) {
+        login(response.data.token); // triggers re-render across app
+        navigate("/dashboard");
+      }
+    } catch (error) {
+      alert("Login failed");
+      console.error(error);
+    }
   };
+  useEffect(() => {
+    if (isLoggedIn) {
+      navigate("/dashboard");
+    }
+  }, [isLoggedIn, navigate]);
+  
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">

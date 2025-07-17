@@ -6,7 +6,7 @@ const TimelineCard = ({ year, points }) => (
     <ul className="list-none p-0 m-0 space-y-2">
       {points.map((point, idx) => (
         <li key={idx} className="relative pl-6 text-sm leading-relaxed">
-          <span className="absolute left-0 text-black font-bold">✔</span>
+          <span className="absolute left-0 text-blue-950 font-bold">✔</span>
           {point}
         </li>
       ))}
@@ -17,7 +17,7 @@ const TimelineCard = ({ year, points }) => (
 const RoadmapCircle = ({ number, style = {} }) => (
   <div className="relative flex flex-col items-center">
     <div
-      className="w-10 h-10 bg-orange-600 text-black rounded-full flex items-center justify-center font-bold text-lg z-10"
+      className="w-10 h-10 bg-orange-600 text-blue-950 rounded-full flex items-center justify-center font-bold text-lg z-10"
       style={style}
     >
       {number}

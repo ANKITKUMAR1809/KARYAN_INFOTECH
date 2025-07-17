@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react';
 
 const rotatingTexts = [
-  "KARYAN INFOTECH",
+  "3K ARYAN INFOTECH",
+  "Web Development",
+  "Digital Marketing",
+  "Graphic Designing",
+  "Video Editing",  
+  "Social Media Gainer",
+  "SEO",
   "Live Classes",
   "100% Internship",
   "Live Projects",

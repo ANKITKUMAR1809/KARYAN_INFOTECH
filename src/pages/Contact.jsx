@@ -3,6 +3,7 @@ import { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import contactImg from "../assets/KARYAN_CONTACT.png";
 import axios from "axios";
+import { Helmet } from "react-helmet-async";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -28,7 +29,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://kiec.3karyaninfotech.in//api/contact",
+        "https://server.3karyaninfotech.in/api/contact",
         formData
       );
 
@@ -53,6 +54,20 @@ const Contact = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>
+          Contact 3K Aryan Infotech | Book Services or Demo Class in Patna
+        </title>
+        <meta
+          name="description"
+          content="Get in touch with 3K Aryan Infotech – for IT services, business consultation, or demo class booking. Call, WhatsApp or visit our Patna office today."
+        />
+        <meta
+          name="keywords"
+          content="Contact IT company in Patna, book demo class Bihar, reach 3K Aryan Infotech"
+        />
+      </Helmet>
+
       <section
         className="w-full h-[70vh] bg-cover bg-center flex items-center justify-center"
         style={{
