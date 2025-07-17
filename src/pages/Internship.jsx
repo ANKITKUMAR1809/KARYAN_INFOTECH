@@ -1,5 +1,5 @@
 import React from "react";
-import Certificate from "../assets/internship/Certificate.jpg";
+import Certificate from "../assets/internship/certificate.jpg";
 import { useNavigate } from "react-router-dom";
 const Internship = () => {
   const navigate = useNavigate();
