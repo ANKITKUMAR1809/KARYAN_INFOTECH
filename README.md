@@ -36,4 +36,4 @@ This website is deployed live at: **https://karyan-infotech.vercel.app/**
 Clone the project:
 
 ```bash
-git clone https://github.com/your-username/karyan-infotech.git
+git clone https://github.com/ANKITKUMAR1809/karyan-infotech.git
