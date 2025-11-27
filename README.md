@@ -1,12 +1,39 @@
-# React + Vite
+# 🚀 Karyan Infotech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Karyan Infotech is a modern and fully responsive IT service and portfolio website designed to showcase services, projects, and brand identity with a clean UI/UX.  
+This website is deployed live at: **https://karyan-infotech.vercel.app/**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+### ✅ Modern UI/UX
+- Clean layout with professional design  
+- Smooth animations and transitions  
+- Fully responsive on all devices  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ Pages Included
+- **Home Page** – Company intro & hero section  
+- **Services Page** – All IT-related services listed  
+- **Projects/Portfolio Page** – Work showcases  
+- **About Page** – Team/company details  
+- **Contact Page** – Contact form with email support  
+
+### ✅ Performance Optimized
+- Fast loading  
+- SEO–friendly  
+- Proper meta tags and structure  
+
+### ✅ Tech-Stack
+- **React.js / Next.js** (depending on your actual framework)  
+- **Tailwind CSS** for styling  
+- **Vercel** for deployment  
+
+---
+
+## 🛠️ Installation & Setup
+
+Clone the project:
+
+```bash
+git clone https://github.com/your-username/karyan-infotech.git
